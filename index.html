@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IK Goat Farm - Premium Goat Farming in Maharashtra | Boer & Sirohi Goats</title>
+    <meta name="description" content="IK Goat Farm - Leading goat farming in Dasur, Maharashtra. Premium Boer & Sirohi goats, expert consultation, and farm setup guidance. Call 94050 86668">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #0f766e 0%, #059669 25%, #10b981 50%, #34d399 75%, #6ee7b7 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 118, 110, 0.95) 0%, rgba(5, 150, 105, 0.9) 50%, rgba(16, 185, 129, 0.85) 100%),
+                        url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-delay-1 { animation-delay: -2s; }
+        .floating-delay-2 { animation-delay: -4s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(-10px) rotate(-1deg); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+            to { box-shadow: 0 0 40px rgba(16, 185, 129, 0.8), 0 0 60px rgba(16, 185, 129, 0.4); }
+        }
+        
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        
+        .card-3d:hover {
+            transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #059669, #10b981, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #059669, #10b981);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            transition: all 0.3s ease;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #10b981, transparent);
+            height: 2px;
+            width: 100px;
+            margin: 0 auto;
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        }
+        
+        .mobile-menu-slide {
+            transform: translateX(-100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mobile-menu-slide.active {
+            transform: translateX(0);
+        }
+        
+        .stats-number {
+            background: linear-gradient(135deg, #059669, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .service-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 1px solid rgba(16, 185, 129, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            animation: bounce-float 3s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes bounce-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .success-toast {
+            transform: translateY(-100px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .success-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+            border-left: 4px solid #10b981;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #0f766e 0%, #059669 50%, #10b981 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .hero-bg {
+                background-attachment: scroll;
+            }
+            
+            .parallax-bg {
+                background-attachment: scroll;
+            }
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    <!-- Success Toast -->
+    <div id="successToast" class="success-toast fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-green-600 text-white px-8 py-4 rounded-2xl shadow-2xl">
+        <div class="flex items-center space-x-3">
+            <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                <span class="text-green-600 text-sm font-bold">✓</span>
+            </div>
+            <span class="font-medium">Enquiry sent successfully! Opening WhatsApp...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-40 nav-blur">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
+                            <span class="text-white text-2xl font-bold">🐐</span>
+                        </div>
+                        <div class="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full pulse-glow"></div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">IK Goat Farm</h1>
+                        <p class="text-sm text-gray-600 font-medium">Premium Quality • Modern Farming</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-green-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-green-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 relative group">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-green-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 relative group">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-green-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 relative group">
+                        Gallery
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 relative group">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="tel:9405086668" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        📞 Call Now
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-3 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                    <div class="w-6 h-6 flex flex-col justify-center items-center space-y-1">
+                        <span class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu-slide lg:hidden fixed top-0 left-0 w-full h-full bg-white z-50">
+            <div class="flex flex-col h-full">
+                <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-bold text-gray-800">Menu</h2>
+                    <button id="closeMobileMenu" class="p-2 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <span class="text-3xl text-gray-600">×</span>
+                    </button>
+                </div>
+                <div class="flex-1 px-6 py-8 space-y-6">
+                    <a href="#home" class="mobile-menu-link block text-xl font-medium text-gray-700 py-4 border-b border-gray-100 hover:text-green-600 transition-colors duration-300">Home</a>
+                    <a href="#about" class="mobile-menu-link block text-xl font-medium text-gray-700 py-4 border-b border-gray-100 hover:text-green-600 transition-colors duration-300">About</a>
+                    <a href="#services" class="mobile-menu-link block text-xl font-medium text-gray-700 py-4 border-b border-gray-100 hover:text-green-600 transition-colors duration-300">Services</a>
+                    <a href="#gallery" class="mobile-menu-link block text-xl font-medium text-gray-700 py-4 border-b border-gray-100 hover:text-green-600 transition-colors duration-300">Gallery</a>
+                    <a href="#contact" class="mobile-menu-link block text-xl font-medium text-gray-700 py-4 border-b border-gray-100 hover:text-green-600 transition-colors duration-300">Contact</a>
+                </div>
+                <div class="p-6 border-t border-gray-200">
+                    <a href="tel:9405086668" class="btn-primary w-full text-center text-white py-4 rounded-xl font-semibold shadow-lg">📞 Call Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center hero-bg">
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-animation floating-delay-1 absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full"></div>
+            <div class="floating-animation floating-delay-2 absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full"></div>
+            <div class="floating-animation absolute bottom-20 left-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="text-white space-y-8">
+                    <div class="fade-in-up">
+                        <span class="inline-flex items-center bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                            🏆 Maharashtra's #1 Goat Farm
+                        </span>
+                    </div>
+                    
+                    <div class="fade-in-up stagger-1">
+                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black leading-tight">
+                            Premium <span class="text-gradient">Goat Farming</span><br>
+                            <span class="text-yellow-300">Excellence</span>
+                        </h1>
+                    </div>
+                    
+                    <div class="fade-in-up stagger-2">
+                        <p class="text-xl lg:text-2xl text-gray-100 leading-relaxed max-w-2xl">
+                            Experience modern, hygienic goat farming with our premium Boer & Sirohi breeds. 
+                            Healthy, disease-free livestock for breeding, meat, and dairy in Dasur, Maharashtra.
+                        </p>
+                    </div>
+                    
+                    <div class="fade-in-up stagger-3 flex flex-col sm:flex-row gap-6">
+                        <a href="#contact" class="btn-primary text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
+                            🚀 Start Your Journey
+                        </a>
+                        <a href="https://wa.me/919405086668" target="_blank" rel="noopener noreferrer" class="glass-morphism text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center border-2 border-white/30">
+                            💬 WhatsApp Chat
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="fade-in-up stagger-4 grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center">
+                            <div class="stats-number text-4xl font-black mb-2" data-target="500">0</div>
+                            <p class="text-gray-200 font-medium">Happy Customers</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="stats-number text-4xl font-black mb-2" data-target="15">0</div>
+                            <p class="text-gray-200 font-medium">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="stats-number text-4xl font-black mb-2" data-target="100">0</div>
+                            <p class="text-gray-200 font-medium">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative fade-in-up stagger-2">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="relative z-10">
+                            <div class="w-full max-w-lg mx-auto">
+                                <div class="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
+                                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                                         alt="Premium Healthy Goat at IK Goat Farm" 
+                                         class="w-full h-96 lg:h-[500px] object-cover"
+                                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                
+                                <!-- Floating Badges -->
+                                <div class="absolute -top-4 -right-4 glass-morphism px-4 py-2 rounded-2xl text-white font-bold shadow-xl">
+                                    🏆 Premium Quality
+                                </div>
+                                <div class="absolute -bottom-4 -left-4 glass-morphism px-4 py-2 rounded-2xl text-white font-bold shadow-xl">
+                                    ✅ 100% Healthy
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Background Decoration -->
+                        <div class="absolute top-8 left-8 w-full h-full bg-gradient-to-br from-yellow-400/20 to-green-400/20 rounded-3xl -z-10"></div>
+                    </div>
+                    
+                    <!-- Contact Card -->
+                    <div class="mt-8 glass-morphism p-6 rounded-3xl text-white shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-4 text-center">📍 Visit Our Farm</h3>
+                        <p class="text-center mb-4 text-gray-100">
+                            Kond Dasur Road, Near Satawli Bridge<br>
+                            Dasur, Maharashtra 416713
+                        </p>
+                        <div class="text-center">
+                            <a href="tel:9405086668" class="inline-flex items-center bg-yellow-400 text-black font-bold py-3 px-6 rounded-2xl hover:bg-yellow-500 transition-all duration-300 shadow-lg transform hover:scale-105">
+                                📞 94050 86668
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, #10b981 2px, transparent 2px); background-size: 50px 50px;"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="fade-in-up">
+                    <span class="inline-block bg-green-100 text-green-800 px-6 py-3 rounded-full font-bold text-lg mb-6">
+                        About IK Goat Farm
+                    </span>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <h2 class="text-4xl lg:text-6xl font-black text-gray-800 mb-6">
+                        Pioneering <span class="text-gradient">Sustainable</span><br>
+                        Goat Farming
+                    </h2>
+                </div>
+                <div class="section-divider mb-8"></div>
+                <div class="fade-in-up stagger-2">
+                    <p class="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Located in the serene landscapes of Dasur, we've revolutionized goat farming with 
+                        cutting-edge techniques and unwavering commitment to quality and sustainability.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Mission Cards -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-20">
+                <div class="fade-in-up card-3d service-card p-8 rounded-3xl">
+                    <div class="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-white text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        To promote sustainable goat farming while providing the highest quality livestock 
+                        for breeding, meat, and dairy purposes across Maharashtra and beyond.
+                    </p>
+                </div>
+                
+                <div class="fade-in-up stagger-1 card-3d service-card p-8 rounded-3xl">
+                    <div class="w-20 h-20 gradient-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-white text-3xl">🔬</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Modern Methods</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        We employ state-of-the-art farming techniques, ensuring our goats are healthy, 
+                        disease-free, and exhibit optimal growth rates with scientific precision.
+                    </p>
+                </div>
+                
+                <div class="fade-in-up stagger-2 card-3d service-card p-8 rounded-3xl">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-white text-3xl">🌱</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sustainability</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Our eco-friendly practices ensure minimal environmental impact while maximizing 
+                        the health and productivity of our livestock for future generations.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Why Choose Us -->
+            <div class="fade-in-up bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 lg:p-16">
+                <h3 class="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-16">
+                    Why Choose <span class="text-gradient">IK Goat Farm</span>?
+                </h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex items-start space-x-4 fade-in-up">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">Healthy & Vaccinated Goats</h4>
+                            <p class="text-gray-600">All our goats receive proper vaccination and continuous health monitoring by veterinary experts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 fade-in-up stagger-1">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">Clean Farm Environment</h4>
+                            <p class="text-gray-600">Maintained with highest hygiene standards and modern infrastructure for optimal animal welfare.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 fade-in-up stagger-2">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">Competitive Pricing</h4>
+                            <p class="text-gray-600">Affordable rates without compromising on quality, ensuring best value for your investment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 fade-in-up stagger-3">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">Expert Guidance</h4>
+                            <p class="text-gray-600">15+ years of experience in modern goat farming techniques and business consultation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 fade-in-up stagger-4">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">Transparent Dealings</h4>
+                            <p class="text-gray-600">Honest business practices with complete transparency in pricing and animal health records.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 fade-in-up stagger-4">
+                        <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <span class="text-white font-bold">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">24/7 Support</h4>
+                            <p class="text-gray-600">Always available for consultation, support, and emergency assistance for your farming needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="fade-in-up">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-6 py-3 rounded-full font-bold text-lg mb-6">
+                        Our Services
+                    </span>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <h2 class="text-4xl lg:text-6xl font-black text-gray-800 mb-6">
+                        Comprehensive <span class="text-gradient">Goat Farming</span><br>
+                        Solutions
+                    </h2>
+                </div>
+                <div class="section-divider mb-8"></div>
+                <div class="fade-in-up stagger-2">
+                    <p class="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        From premium breeding stock to expert consultation, we provide everything you need 
+                        for successful and profitable goat farming operations.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="fade-in-up service-card p-8 rounded-3xl shadow-xl">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center shadow-lg mx-auto">
+                            <span class="text-white text-3xl">🐐</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <span class="text-black text-xs font-bold">★</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Goat Breeding & Sale</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                        Premium quality goats for meat and milk production with excellent breeding potential and genetic superiority.
+                    </p>
+                    <div class="text-center">
+                        <a href="#contact" class="inline-flex items-center text-green-600 font-bold hover:text-green-700 transition-colors duration-300">
+                            Learn More <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="fade-in-up stagger-1 service-card p-8 rounded-3xl shadow-xl">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 gradient-secondary rounded-2xl flex items-center justify-center shadow-lg mx-auto">
+                            <span class="text-white text-3xl">🏆</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <span class="text-black text-xs font-bold">★</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Boer & Sirohi Goats</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                        Specialized breeds perfect for commercial farming with superior growth rates, disease resistance, and adaptability.
+                    </p>
+                    <div class="text-center">
+                        <a href="#contact" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 transition-colors duration-300">
+                            Learn More <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="fade-in-up stagger-2 service-card p-8 rounded-3xl shadow-xl">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto">
+                            <span class="text-white text-3xl">🏗️</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <span class="text-black text-xs font-bold">★</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Farm Setup Guidance</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                        Expert consultation to help you establish and optimize your goat farming operations from ground up.
+                    </p>
+                    <div class="text-center">
+                        <a href="#contact" class="inline-flex items-center text-purple-600 font-bold hover:text-purple-700 transition-colors duration-300">
+                            Learn More <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="fade-in-up stagger-3 service-card p-8 rounded-3xl shadow-xl">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg mx-auto">
+                            <span class="text-white text-3xl">🌾</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <span class="text-black text-xs font-bold">★</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Feed & Nutrition</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                        Customized nutrition plans and feeding strategies for optimal growth, health, and productivity.
+                    </p>
+                    <div class="text-center">
+                        <a href="#contact" class="inline-flex items-center text-yellow-600 font-bold hover:text-yellow-700 transition-colors duration-300">
+                            Learn More <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="fade-in-up">
+                    <span class="inline-block bg-purple-100 text-purple-800 px-6 py-3 rounded-full font-bold text-lg mb-6">
+                        Farm Gallery
+                    </span>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <h2 class="text-4xl lg:text-6xl font-black text-gray-800 mb-6">
+                        See Our <span class="text-gradient">Modern Facilities</span><br>
+                        & Healthy Goats
+                    </h2>
+                </div>
+                <div class="section-divider mb-8"></div>
+                <div class="fade-in-up stagger-2">
+                    <p class="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Take a virtual tour of our state-of-the-art goat farming facilities and meet our 
+                        healthy, well-cared-for livestock in their natural environment.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="fade-in-up card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Healthy Goats Grazing" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Healthy Goats Grazing</h3>
+                            <p class="text-sm text-gray-200">Our goats enjoy natural grazing in clean, spacious environments with fresh air and sunshine.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-1 card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1605027990121-cbae9e0642df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Premium Boer Goats" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Premium Boer Goats</h3>
+                            <p class="text-sm text-gray-200">High-quality Boer goats known for excellent meat production and superior genetic traits.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-2 card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Goat Kids Playing" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Goat Kids Playing</h3>
+                            <p class="text-sm text-gray-200">Young goats in a safe, nurturing environment designed for optimal growth and development.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-3 card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Modern Farm Facilities" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Modern Farm Facilities</h3>
+                            <p class="text-sm text-gray-200">State-of-the-art infrastructure ensuring animal welfare and operational efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-4 card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Quality Feed Storage" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Quality Feed Storage</h3>
+                            <p class="text-sm text-gray-200">Proper storage facilities for nutritious feed and supplements ensuring optimal nutrition.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-4 card-3d rounded-3xl overflow-hidden shadow-xl">
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Sustainable Farming" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold mb-2">Sustainable Farming</h3>
+                            <p class="text-sm text-gray-200">Eco-friendly practices for sustainable goat farming and environmental conservation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="text-center fade-in-up">
+                <a href="#contact" class="btn-primary text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+                    🏡 Visit Our Farm Today
+                    <span class="ml-3">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 lg:py-32 parallax-bg" style="background-image: linear-gradient(135deg, rgba(15, 118, 110, 0.9), rgba(5, 150, 105, 0.9)), url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-20">
+                <div class="fade-in-up">
+                    <span class="inline-block bg-white/20 text-white px-6 py-3 rounded-full font-bold text-lg mb-6">
+                        Customer Stories
+                    </span>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <h2 class="text-4xl lg:text-6xl font-black text-white mb-6">
+                        What Our <span class="text-yellow-300">Customers</span> Say
+                    </h2>
+                </div>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="fade-in-up testimonial-card p-8 rounded-3xl shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            R
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Rajesh Patil</h4>
+                            <p class="text-gray-600">Farmer, Kolhapur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        "IK Goat Farm provided me with excellent Boer goats. Their guidance helped me establish a successful farm. Highly recommended for quality and service!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        ★★★★★
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-1 testimonial-card p-8 rounded-3xl shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Suresh Jadhav</h4>
+                            <p class="text-gray-600">Entrepreneur, Pune</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        "Amazing experience! The goats are healthy, and the farm setup guidance was invaluable. My investment has already started showing returns."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        ★★★★★
+                    </div>
+                </div>
+                
+                <div class="fade-in-up stagger-2 testimonial-card p-8 rounded-3xl shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Mahesh Kumar</h4>
+                            <p class="text-gray-600">Businessman, Mumbai</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        "Professional service and transparent dealings. The team's expertise in goat farming is exceptional. Very satisfied with my purchase!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="fade-in-up">
+                    <span class="inline-block bg-green-100 text-green-800 px-6 py-3 rounded-full font-bold text-lg mb-6">
+                        Get In Touch
+                    </span>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <h2 class="text-4xl lg:text-6xl font-black text-gray-800 mb-6">
+                        Ready to Start Your <span class="text-gradient">Goat Farming</span><br>
+                        Journey?
+                    </h2>
+                </div>
+                <div class="section-divider mb-8"></div>
+                <div class="fade-in-up stagger-2">
+                    <p class="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Contact us today for premium goats, expert guidance, or to schedule a farm visit. 
+                        We're here to help you succeed in your goat farming venture.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div class="fade-in-up service-card p-8 lg:p-12 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-8 text-center">
+                        📩 Send Us Your Enquiry
+                    </h3>
+                    
+                    <form id="enquiryForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="fullName" class="block text-sm font-bold text-gray-700 mb-3">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required 
+                                       class="w-full px-4 py-4 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 text-lg" 
+                                       placeholder="Enter your full name">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-bold text-gray-700 mb-3">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       class="w-full px-4 py-4 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 text-lg" 
+                                       placeholder="Your mobile number">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700 mb-3">Email Address</label>
+                                <input type="email" id="email" name="email" 
+                                       class="w-full px-4 py-4 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 text-lg" 
+                                       placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label for="location" class="block text-sm font-bold text-gray-700 mb-3">Your Location *</label>
+                                <input type="text" id="location" name="location" required 
+                                       class="w-full px-4 py-4 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 text-lg" 
+                                       placeholder="City, District">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-4">Type of Enquiry</label>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <label class="flex items-center p-4 bg-white border-2 border-gray-200 rounded-xl cursor-pointer hover:border-green-300 transition-all duration-300">
+                                    <input type="checkbox" name="enquiryType" value="buy-goats" class="mr-3 text-green-600 rounded">
+                                    <span class="font-medium">Want to Buy Goats</span>
+                                </label>
+                                <label class="flex items-center p-4 bg-white border-2 border-gray-200 rounded-xl cursor-pointer hover:border-green-300 transition-all duration-300">
+                                    <input type="checkbox" name="enquiryType" value="farm-setup" class="mr-3 text-green-600 rounded">
+                                    <span class="font-medium">Farm Setup Guidance</span>
+                                </label>
+                                <label class="flex items-center p-4 bg-white border-2 border-gray-200 rounded-xl cursor-pointer hover:border-green-300 transition-all duration-300">
+                                    <input type="checkbox" name="enquiryType" value="bulk-order" class="mr-3 text-green-600 rounded">
+                                    <span class="font-medium">Bulk Order / Partnership</span>
+                                </label>
+                                <label class="flex items-center p-4 bg-white border-2 border-gray-200 rounded-xl cursor-pointer hover:border-green-300 transition-all duration-300">
+                                    <input type="checkbox" name="enquiryType" value="others" class="mr-3 text-green-600 rounded">
+                                    <span class="font-medium">Other Enquiries</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-gray-700 mb-3">Your Message</label>
+                            <textarea id="message" name="message" rows="5" 
+                                      class="w-full px-4 py-4 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 text-lg resize-none" 
+                                      placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-primary text-white font-bold py-4 px-8 rounded-xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                            🚀 Send Enquiry via WhatsApp
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8 fade-in-up stagger-1">
+                    <!-- Direct Contact -->
+                    <div class="gradient-primary p-8 lg:p-10 rounded-3xl text-white shadow-2xl">
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-8 text-center">📞 Direct Contact</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl">📱</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">Phone / WhatsApp</p>
+                                    <a href="tel:9405086668" class="text-yellow-300 hover:text-yellow-200 transition-colors duration-300 text-xl font-bold">94050 86668</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-2xl">📍</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">Farm Location</p>
+                                    <p class="text-green-100 text-lg leading-relaxed">
+                                        Kond Dasur Road, Near Satawli Bridge<br>
+                                        Dasur, Maharashtra 416713
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-8 border-t border-white/20">
+                            <div class="grid grid-cols-2 gap-4">
+                                <a href="tel:9405086668" class="bg-white/20 hover:bg-white/30 text-center py-4 rounded-xl font-bold transition-all duration-300 transform hover:scale-105">
+                                    📞 Call Now
+                                </a>
+                                <a href="https://wa.me/919405086668" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 hover:bg-yellow-500 text-black text-center py-4 rounded-xl font-bold transition-all duration-300 transform hover:scale-105">
+                                    💬 WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Farm Visit -->
+                    <div class="service-card p-8 lg:p-10 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">🏡 Visit Our Farm</h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed text-center">
+                            We welcome all visitors, traders, and farmers who want to grow in the livestock business. 
+                            Come see our modern facilities and healthy goats firsthand.
+                        </p>
+                        <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-2xl">
+                            <p class="text-sm text-gray-600 mb-2 font-medium">Farm Hours:</p>
+                            <p class="font-bold text-gray-800 text-lg">Daily: 7:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="service-card p-6 rounded-2xl text-center shadow-xl">
+                            <div class="text-3xl font-black text-green-600 mb-2">500+</div>
+                            <p class="text-sm font-bold text-gray-700">Satisfied Customers</p>
+                        </div>
+                        <div class="service-card p-6 rounded-2xl text-center shadow-xl">
+                            <div class="text-3xl font-black text-blue-600 mb-2">15+</div>
+                            <p class="text-sm font-bold text-gray-700">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-20 lg:py-32 relative">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="fade-in-up">
+                    <h2 class="text-4xl lg:text-6xl font-black text-white mb-8">
+                        Start Your <span class="text-yellow-300">Success Story</span><br>
+                        Today!
+                    </h2>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <p class="text-xl lg:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Join hundreds of successful farmers who have transformed their lives with our premium goats and expert guidance.
+                    </p>
+                </div>
+                <div class="fade-in-up stagger-2 flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                        🚀 Get Started Now
+                    </a>
+                    <a href="tel:9405086668" class="glass-morphism text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-white/30">
+                        📞 Call Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
+                            <span class="text-white text-2xl font-bold">🐐</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">IK Goat Farm</h3>
+                            <p class="text-gray-400">Premium Quality • Modern Farming</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6 max-w-md">
+                        Leading goat farming in Maharashtra with modern techniques, sustainable practices, 
+                        and unwavering commitment to quality and customer satisfaction.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="tel:9405086668" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300">
+                            📞 Call
+                        </a>
+                        <a href="https://wa.me/919405086668" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Quick Links</h4>
+                    <div class="space-y-3">
+                        <a href="#home" class="block text-gray-400 hover:text-white transition-colors duration-300 text-lg">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-white transition-colors duration-300 text-lg">About Us</a>
+                        <a href="#services" class="block text-gray-400 hover:text-white transition-colors duration-300 text-lg">Services</a>
+                        <a href="#gallery" class="block text-gray-400 hover:text-white transition-colors duration-300 text-lg">Gallery</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-white transition-colors duration-300 text-lg">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contact Info</h4>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-xl">📞</span>
+                            <span class="text-lg">94050 86668</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-xl mt-1">📍</span>
+                            <div>
+                                <p class="text-lg">Kond Dasur Road, Near Satawli Bridge</p>
+                                <p class="text-lg">Dasur, Maharashtra 416713</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-xl">🕒</span>
+                            <span class="text-lg">Daily: 7:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-lg mb-4 lg:mb-0">
+                        © 2024 IK Goat Farm. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap gap-6 text-sm text-gray-500">
+                        <span>Goat Farm in Dasur</span>
+                        <span>•</span>
+                        <span>Boer Goat for Sale</span>
+                        <span>•</span>
+                        <span>Sirohi Goat Supplier</span>
+                        <span>•</span>
+                        <span>Maharashtra Goat Farm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919405086668" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+        <span class="text-white text-2xl">💬</span>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Stats Counter Animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + (target === 100 ? '%' : '+');
+            }, 20);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stats-number')) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        animateCounter(entry.target, target);
+                    }
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.fade-in-up, .stats-number').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission handler
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const fullName = formData.get('fullName');
+            const phone = formData.get('phone');
+            const email = formData.get('email');
+            const location = formData.get('location');
+            const message = formData.get('message');
+            const enquiryTypes = formData.getAll('enquiryType');
+            
+            // Create WhatsApp message
+            let whatsappMessage = `🐐 *IK Goat Farm Enquiry*\n\n`;
+            whatsappMessage += `👤 *Name:* ${fullName}\n`;
+            whatsappMessage += `📱 *Phone:* ${phone}\n`;
+            if (email) whatsappMessage += `📧 *Email:* ${email}\n`;
+            whatsappMessage += `📍 *Location:* ${location}\n`;
+            if (enquiryTypes.length > 0) {
+                whatsappMessage += `🎯 *Enquiry Type:* ${enquiryTypes.join(', ')}\n`;
+            }
+            if (message) whatsappMessage += `💬 *Message:* ${message}\n`;
+            whatsappMessage += `\nThank you for your interest in IK Goat Farm! 🙏`;
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/919405086668?text=${encodedMessage}`;
+            
+            // Show success message
+            const successToast = document.getElementById('successToast');
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            successToast.classList.add('show');
+            submitButton.innerHTML = '✅ Sending... Please wait';
+            submitButton.disabled = true;
+            
+            // Open WhatsApp after delay
+            setTimeout(() => {
+                window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+                
+                // Reset form and hide success message
+                setTimeout(() => {
+                    this.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    successToast.classList.remove('show');
+                }, 2000);
+            }, 1500);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 100; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.borderBottom = '1px solid rgba(16, 185, 129, 0.2)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.borderBottom = '1px solid rgba(16, 185, 129, 0.1)';
+            }
+        });
+
+        // Initialize animations on page load
+        window.addEventListener('load', () => {
+            // Trigger initial animations for hero section
+            document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+                if (el.getBoundingClientRect().top < window.innerHeight) {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        });
+
+        // Parallax effect for hero section (desktop only)
+        if (window.innerWidth > 768) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroSection = document.querySelector('.hero-bg');
+                if (heroSection) {
+                    const speed = scrolled * 0.5;
+                    heroSection.style.transform = `translateY(${speed}px)`;
+                }
+            });
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98f7ba8be144a743',t:'MTc2MDYxOTUxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
